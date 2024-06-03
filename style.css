@@ -44,14 +44,18 @@ main {
   align-items: stretch;
   justify-content: flex-start;
   gap: 24px;
-  box-shadow: 16px 16px 0px 0px var(--black-color);
+  box-shadow: 8px 8px 0px 0px var(--black-color);
   cursor: pointer;
+  transition: box-shadow 500ms;
+}
+
+.blog-card:hover {
+  box-shadow: 16px 16px 0px 0px var(--black-color);
 }
 
 @media screen and (max-width: 415px) {
   .blog-card {
     max-width: 327px;
-    box-shadow: 8px 8px 0px 0px var(--black-color);
   }
 }
 
@@ -108,7 +112,7 @@ main {
   cursor: pointer;
 }
 
-.blog-content .title:hover {
+.blog-card:hover .blog-content .title {
   color: var(--yellow-bg);
 }
 
